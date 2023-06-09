@@ -4,7 +4,7 @@ import ctypes
 if starting:
     # 功能设置
     screen_length = 1920  # 屏幕分辨率，用于光标回中
-    screen_height = 1080
+    screen_height = 1200
     is_roll_yaw_connect = True  # 偏航与滚转连动，启动时需设置鼠标操作限制部分中的连动程度
     is_aim_mode = True  # 瞄准模式，按下右键时禁用滚转，鼠标x轴映射至偏航，精确调整机头指向用
     # 链接vJoy
@@ -71,7 +71,7 @@ if starting:
 
 
 # 按键设置，可自行更改
-key_toggle_mouse_control = keyboard.getPressed(Key.Grave)  # 开关鼠标飞控，默认为~键
+key_toggle_mouse_control = keyboard.getPressed(Key.CapsLock)  # 开关鼠标飞控，默认为~键
 
 # 滚转/俯仰/偏航按键，按住对应按键再按下时也作为模拟苦力帽使用
 key_roll_left = keyboard.getKeyDown(Key.A)  # 滚转，默认为A/D键
