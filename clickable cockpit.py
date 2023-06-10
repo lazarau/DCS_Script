@@ -71,13 +71,13 @@ if starting:
 
 
 # 按键设置，可自行更改
-key_toggle_mouse_control = keyboard.getPressed(Key.CapsLock)  # 开关鼠标飞控，默认为~键
+key_toggle_mouse_control = keyboard.getPressed(Key.CapsLock)  # 开关鼠标飞控，默认为Capslock键
 
 # 滚转/俯仰/偏航按键，按住对应按键再按下时也作为模拟苦力帽使用
 key_roll_left = keyboard.getKeyDown(Key.A)  # 滚转，默认为A/D键
 key_roll_right = keyboard.getKeyDown(Key.D)
-key_pitch_up = keyboard.getKeyDown(Key.S)  # 俯仰，默认为W/S键
-key_pitch_down = keyboard.getKeyDown(Key.W)
+key_pitch_up = keyboard.getKeyDown(Key.W)  # 俯仰，默认为W/S键
+key_pitch_down = keyboard.getKeyDown(Key.S)
 key_yaw_left = keyboard.getKeyDown(Key.Q)  # 偏航，默认为Q/E键
 key_yaw_right = keyboard.getKeyDown(Key.E)
 key_pitch_center = mouse.getButton(2)  # 俯仰回中，默认为鼠标中键
