@@ -54,9 +54,9 @@ if starting:
     key_yaw_limit = 1
 
     # 鼠标操作限制，默认可操作至满行程的75%，可自行修改
-    mouse_pitch_limit = 0.75
+    mouse_pitch_limit = 1
     mouse_roll_limit = 0.75
-    mouse_yaw_limit = 0.4
+    mouse_yaw_limit = 0.5
 
     def axisLimitControl(value, multiplier):  # 限制函数，将超出轴行程的值限制在行程内
         if value > axis_max*multiplier:
@@ -76,8 +76,8 @@ key_toggle_mouse_control = keyboard.getPressed(Key.CapsLock)  # 开关鼠标飞�
 # 滚转/俯仰/偏航按键，按住对应按键再按下时也作为模拟苦力帽使用
 key_roll_left = keyboard.getKeyDown(Key.A)  # 滚转，默认为A/D键
 key_roll_right = keyboard.getKeyDown(Key.D)
-key_pitch_up = keyboard.getKeyDown(Key.W)  # 俯仰，默认为W/S键
-key_pitch_down = keyboard.getKeyDown(Key.S)
+key_pitch_up = keyboard.getKeyDown(Key.S)  # 俯仰，默认为W/S键
+key_pitch_down = keyboard.getKeyDown(Key.W)
 key_yaw_left = keyboard.getKeyDown(Key.Q)  # 偏航，默认为Q/E键
 key_yaw_right = keyboard.getKeyDown(Key.E)
 key_pitch_center = mouse.getButton(2)  # 俯仰回中，默认为鼠标中键
